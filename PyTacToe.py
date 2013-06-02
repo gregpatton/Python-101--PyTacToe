@@ -69,16 +69,12 @@ def gameOver(message):
 
 def main():
   print('PyTacToe')
-
   grid_list = [' ', ' ', ' ' ,' ' ,' ' ,' ' ,' ' ,' ', ' ']
   displayInstructions()
-
   endOfGame = False
-
   turn = 'Human'
 
   while (endOfGame == False):
-
     while (turn == 'Human' and endOfGame == False):
       displayBoard(grid_list)
       move = getUserInt()
